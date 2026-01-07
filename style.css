@@ -477,6 +477,49 @@
             font-size: 14px;
             color: #bbb;
         }
+        /* ================= HIGHLIGHTS HOVER FOCUS EFFECT ================= */
+
+        .chefs-grid {
+        position: relative;
+        }
+
+        /* Base card transition */
+        .chef-card {
+        transition: 
+            transform 0.4s ease,
+            opacity 0.4s ease,
+            filter 0.4s ease,
+            z-index 0.4s ease;
+        cursor: pointer;
+        }
+
+        /* When hovering on grid, fade all cards */
+        .chefs-grid:hover .chef-card {
+        opacity: 0.25;
+        filter: blur(2px);
+        transform: scale(0.9);
+        }
+
+        /* Keep hovered card in focus */
+        .chefs-grid .chef-card:hover {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.15);
+        z-index: 10;
+        }
+
+        /* Extra glow for hovered card */
+        .chefs-grid .chef-card:hover {
+        box-shadow: 
+            0 20px 50px rgba(0, 0, 0, 0.6),
+            0 0 25px rgba(255, 183, 77, 0.35);
+        }
+
+        /* Smooth icon pop */
+        .chef-card:hover .chef-image {
+        transform: scale(1.15) rotate(5deg);
+        transition: transform 0.4s ease;
+        }
 
         /* ===== CONTACT / FOOTER ===== */
         .reservation {

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amol Kothawale - Executive Sous Chef Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Amol Kothawale</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Bio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#training">Training</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="book-btn" onclick="scrollToSection('contact')">Hire Me</button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Amol Kothawale</h1>
+            <h2>Executive Sous Chef</h2>
+            <p>Total 17 years of hospitality knowledge and experience in multicuisine, leading premium lounges and culinary teams across India.</p>
+            <div class="cta-buttons">
+                <button class="cta-btn primary" onclick="scrollToSection('experience')">View Experience</button>
+                <button class="cta-btn secondary" onclick="scrollToSection('contact')">Contact</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIO / ABOUT -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Amol</h2>
+            <p>I am an Executive Sous Chef with a strong foundation in hospitality administration and management, bringing 17 years of hands-on experience in multicuisine operations.</p>
+            <p>I completed my Bachelor’s degree in Hospitality Administration/Management from 2004 to 2007, earning a 100% attendance award in the academic year 2004–2005.[file:26]</p>
+            <p>During my college years, I actively supported various five-star hotels in Mumbai in part-time catering roles and served as head chef for college cultural functions, honing leadership and kitchen management skills.[file:26]</p>
+            <p>My professional journey has taken me through leading airport lounges and hospitality brands, where I have been part of multiple pre-opening teams and large-scale food service operations.[file:26]</p>
+        </div>
+        <div class="about-image"></div>
+    </section>
+
+    <!-- EXPERIENCE (uses tabs instead of menu categories) -->
+    <section id="experience" class="menu">
+        <div class="menu-container">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">Key roles across hospitality and lounge services</p>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" onclick="showMenu('current')">Current Role</button>
+                <button class="menu-tab" onclick="showMenu('blr')">BLR Lounge</button>
+                <button class="menu-tab" onclick="showMenu('tfs')">TFS Performa MALS</button>
+                <button class="menu-tab" onclick="showMenu('mial')">Mumbai Airport</button>
+            </div>
+
+            <!-- Current -->
+            <div id="current" class="menu-items active">
+                <div class="menu-item">
+                    <h3>Executive Sous Chef – Travel Food Services</h3>
+                    <div class="price">Sep 2024 – Present · 080 International Lounge · India (On-site)</div>
+                    <p>Currently working as Executive Sous Chef at Travel Food Services, overseeing culinary operations at the 080 International Lounge with a focus on premium guest experience and high-volume service quality.[file:26]</p>
+                </div>
+            </div>
+
+            <!-- BLR -->
+            <div id="blr" class="menu-items">
+                <div class="menu-item">
+                    <h3>Executive Sous Chef – BLR Lounge Services Pvt. Ltd</h3>
+                    <div class="price">Jul 2023 – Sep 2024 · Bengaluru, Karnataka, India</div>
+                    <p>Served as Executive Sous Chef with responsibility for production, menu execution, and team leadership in a high-traffic lounge environment.[file:26]</p>
+                </div>
+            </div>
+
+            <!-- TFS Performa -->
+            <div id="tfs" class="menu-items">
+                <div class="menu-item">
+                    <h3>Sous Chef – TFS Performa MALS</h3>
+                    <div class="price">Apr 2019 – Jan 2023 · Mumbai, Maharashtra</div>
+                    <p>Worked as Sous Chef for 3 years and 6 months, managing multicuisine production, quality standards, and coordination for large-scale food services.[file:26]</p>
+                </div>
+            </div>
+
+            <!-- Mumbai Airport / GVK -->
+            <div id="mial" class="menu-items">
+                <div class="menu-item">
+                    <h3>Section & Shift Incharge – Mumbai International Airport Pvt. Ltd</h3>
+                    <div class="price">Pre-opening & Operational Roles</div>
+                    <p>Part of the pre-opening team for the award-winning GVK Lounge, comprising First Class, Business Premium, and Business Class Lounges spread over 2,850 sqm at the new Mumbai Airport.[file:26]</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Travel Club Lounge – New Domestic Terminal</h3>
+                    <div class="price">Pre-opening Team</div>
+                    <p>Contributed to the launch of the Travel Club Lounge in the new Domestic Terminal, focusing on kitchen readiness, operations, and guest service standards.[file:26]</p>
+                </div>
+                <div class="menu-item">
+                    <h3>GVK Domestic Lounge</h3>
+                    <div class="price">Pre-opening Team · 380 seats · 1,500 sqm</div>
+                    <p>Supported the pre-opening and setup of the GVK Domestic Lounge with 380 seats, ensuring efficient food production flow and service quality.[file:26]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAINING / EDUCATION -->
+    <section id="training" class="gallery">
+        <div class="gallery-container">
+            <h2 class="section-title">Education & Training</h2>
+            <p class="section-subtitle">Academic foundation and professional development</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <h3>Bachelor’s in Hospitality Administration/Management</h3>
+                    <p>Completed from 2004 – 2007 with a 100% attendance award for the academic year 2004–2005. Actively involved in college events as head chef during cultural functions.[file:26]</p>
+                </div>
+                <div class="gallery-item">
+                    <h3>Hyatt Culinary Training Program</h3>
+                    <p>Completed specialized culinary training at Hyatt in Hospitality Administration/Management from Apr 2012 – 2014, strengthening technical and operational kitchen skills.[file:26]</p>
+                </div>
+                <div class="gallery-item">
+                    <h3>Summer Training – Jewel of India & Jade Garden</h3>
+                    <p>Six months of summer training (Jun 2005 – Nov 2005) at Jewel of India & Jade Garden in Worli, Mumbai, across F&B Services and Production departments.[file:26]</p>
+                </div>
+                <div class="gallery-item">
+                    <h3>Intern – Nukem Hotels & Resorts (Hotel Highway View)</h3>
+                    <p>Three-month internship (Nov 2004 – Jan 2005) at Hotel Highway View, Navi Mumbai, contributing to hotel operations and kitchen support.[file:26]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS / SUMMARY -->
+    <section id="highlights" class="chefs">
+        <div class="chefs-container">
+            <h2 class="section-title">Career Highlights</h2>
+            <p class="section-subtitle">Strengths, achievements, and professional outlook</p>
+
+            <div class="chefs-grid">
+                <div class="chef-card">
+                    <div class="chef-image">👨‍🍳</div>
+                    <h3>Multicuisine Expertise</h3>
+                    <p>Total 17 years of hospitality knowledge and experience in multicuisine environments, from five-star hotels to premium airport lounges.[file:26]</p>
+                </div>
+                <div class="chef-card">
+                    <div class="chef-image">🏆</div>
+                    <h3>Pre-opening Specialist</h3>
+                    <p>Key member of multiple pre-opening teams, including award-winning GVK Lounges and high-capacity domestic and international lounge projects.[file:26]</p>
+                </div>
+                <div class="chef-card">
+                    <div class="chef-image">🎯</div>
+                    <h3>Leadership & Ownership</h3>
+                    <p>Experience as section and shift incharge, handling team coordination, quality control, and guest-centric food service operations.[file:26]</p>
+                </div>
+                <div class="chef-card">
+                    <div class="chef-image">🚀</div>
+                    <h3>Future-ready Professional</h3>
+                    <p>Ready to take on new challenges that enrich skills and leverage deep hospitality experience for the next stage of career growth.[file:26]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reservation">
+        <div class="reservation-container">
+            <h2>Contact Amol</h2>
+            <form onsubmit="handleContact(event)">
+                <div class="form-group">
+                    <label for="cname">Your Name</label>
+                    <input type="text" id="cname" required>
+                </div>
+                <div class="form-group">
+                    <label for="cemail">Your Email</label>
+                    <input type="email" id="cemail" required>
+                </div>
+                <div class="form-group">
+                    <label for="cmsg">Message</label>
+                    <textarea id="cmsg" placeholder="Share collaboration details, opportunities, or inquiries."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Profile</h3>
+                <ul>
+                    <li>Executive Sous Chef</li>
+                    <li>17+ years hospitality experience</li>
+                    <li>Multicuisine & lounge operations</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:amol_kothawale@yahoo.com">amol_kothawale@yahoo.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/amol-kothawale-88241559" target="_blank">View Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Location</h3>
+                <ul>
+                    <li>India</li>
+                    <li>Experience across Mumbai & Bengaluru</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Portfolio of Amol Kothawale. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

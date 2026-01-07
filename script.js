@@ -35,3 +35,36 @@ function showMenu(category) {
             form.reset();
             setTimeout(() => msg.remove(), 5000);
         }
+
+        // Intersection Observer to handle "Scroll to Reveal" animation
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollElements = document.querySelectorAll(".js-scroll");
+
+            const elementInView = (el, dividend = 1) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <=
+                    (window.innerHeight || document.documentElement.clientHeight) / dividend
+                );
+            };
+
+            const displayScrollElement = (element) => {
+                element.classList.add("animate-in");
+            };
+
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 1.1)) { // 1.1 means trigger slightly before bottom
+                        displayScrollElement(el);
+                    }
+                });
+            };
+
+            // Run once on load in case elements are already visible
+            handleScrollAnimation();
+
+            // Run on scroll
+            window.addEventListener("scroll", () => {
+                handleScrollAnimation();
+            });
+        });
